@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasino Slot Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="spinSound">
+    <source src="spin-sound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="jackpotSound">
+    <source src="jackpot-sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1 class="casino-title">🎰 Kasino Slot Game 🎲</h1>
+    <div class="credit-panel">
+      <p>Kredit: <span id="credits">100</span></p>
+    </div>
+    <div class="slot-machine">
+      <div class="reel" id="reel1">🍒</div>
+      <div class="reel" id="reel2">🍋</div>
+      <div class="reel" id="reel3">🍉</div>
+    </div>
+    <button id="spinButton">Taruhan & Spin</button>
+    <p id="message"></p>
+    <button id="toggleMusic">Matikan Musik</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

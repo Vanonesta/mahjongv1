@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* Kasino Title with Animation */
+.casino-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 20px red, 0 0 30px yellow;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px red, 0 0 30px yellow;
+  }
+  to {
+    text-shadow: 0 0 30px yellow, 0 0 50px red;
+  }
+}
+
+/* Kredit Panel */
+.credit-panel p {
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+/* Slot Machine */
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.reel {
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid gold;
+  margin: 0 5px;
+  background-color: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 10px gold;
+  overflow: hidden;
+  position: relative;
+  animation: idle-pulse 2s infinite alternate;
+}
+
+@keyframes idle-pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
+}
+
+/* Buttons */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Message */
+p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  animation: message-glow 1s infinite alternate;
+}
+
+@keyframes message-glow {
+  from {
+    color: white;
+  }
+  to {
+    color: gold;
+  }
+}
